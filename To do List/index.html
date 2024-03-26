@@ -9,22 +9,24 @@
 </head>
 
 <body>
-    <h2 class="titulo"> Lista de Tarefas </h2>
-    <h3 class="subtitulo"> Programação FrontEnd </h3>
-    
-    <div class="gugugugu"></div>
+    <div class="border">
 
-    <div id="div_area_nova_tarefa">
-        <label for="input_nova_tarefa">Digite sua nova tarefa:</label>
-        <input type="text" id="input_nova_tarefa">
-        <button onclick="adicionaTarefaNaLista()">+</button>
+        <h2 class="title"> Lista de Tarefas </h2>
+        <h3 class="subtitle"> Programação FrontEnd </h3>
+
+        <div id="div_area_nova_tarefa">
+            <label for="input_nova_tarefa">Digite sua nova tarefa:</label>
+            <input type="text" id="input_nova_tarefa">
+            <button onclick="adicionaTarefaNaLista()">+</button>
+        </div>
+
+        <div id="div_lista_de_tarefas">
+            <ul id="lista_de_tarefas"> </ul>
+        </div>
+
+        <button onclick="resetTarefas()">Resetar Tarefas</button>
+
     </div>
-
-    <div id="div_lista_de_tarefas">
-        <ul id="lista_de_tarefas"> </ul>
-    </div>
-
-    <button onclick="resetTarefas()">Resetar Tarefas</button>
 
     <script src="app.js"></script>
 

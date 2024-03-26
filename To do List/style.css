@@ -4,3 +4,12 @@ body{
     padding-top: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.border{
+    border: 2px solid #282828;
+    border-radius: 1rem;
+    width: 30%;
+    margin: auto;
+    padding-block: 40px;
+    padding-top: 10px;
+}

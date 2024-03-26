@@ -13,7 +13,6 @@ function criaNovoItemDaLista(textoDaTarefa) {
     novoItem.innerText = textoDaTarefa;
     novoItem.id = `tarefa_id_${qtdTarefas++}`;
 
-    // Adiciona evento de duplo clique para editar
     novoItem.addEventListener('dblclick', function() {
         editaTarefa(this);
     });
@@ -42,7 +41,6 @@ function editaTarefa(tarefa) {
 function finalizaEdicaoTarefa(tarefa, inputEdicao) {
     const novoTexto = inputEdicao.value;
     tarefa.innerHTML = novoTexto;
-    // Adiciona evento de duplo clique novamente para permitir futuras edições
     tarefa.addEventListener('dblclick', function() {
         editaTarefa(this);
     });

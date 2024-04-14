@@ -1,4 +1,3 @@
-// carrega as tarefas do Local Storage
 window.onload = function() {
     carregaTarefasDoLocalStorage();
 };
@@ -69,7 +68,7 @@ function mudaEstadoTarefa(idTarefa) {
         tarefaSelecionada.style.textDecoration = 'line-through';
     }
 
-    salvaTarefasNoLocalStorage(); // salva as tarefas atualizadas
+    salvaTarefasNoLocalStorage();
 }
 
 function resetTarefas() {
@@ -82,7 +81,7 @@ function resetTarefas() {
         }
     });
 
-    salvaTarefasNoLocalStorage(); // salva as tarefas
+    salvaTarefasNoLocalStorage();
 }
 
 function salvaTarefasNoLocalStorage() {
